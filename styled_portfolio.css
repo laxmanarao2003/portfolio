@@ -10,22 +10,24 @@ body
     user-select:none;
 }
 ***************/
-::-webkit-scrollbar 
+::-webkit-scrollbar
 {
-    width: 7px;
+    width:9px;
+    height: 10px;
 }
-::-webkit-scrollbar-track 
+::-webkit-scrollbar-thumb
 {
-    background: #fff; 
+    background-color: rgba(240, 255, 255, 0.306);
+    border-radius: 5px;
 }
-::-webkit-scrollbar-thumb 
+::-webkit-scrollbar-thumb:hover
 {
-    background: rgba(0,0,0,0.6); 
-    border-radius: 3px;
-}          
-::-webkit-scrollbar-thumb:hover 
+    background-color:#198754;
+}
+::-webkit-scrollbar-track
 {
-    background: rgba(0, 0, 0, 0.767); 
+    width: 5px;
+    background-color: rgb(40,40,40);
 }
 #home
 {
@@ -89,10 +91,6 @@ body
 #nav-brand
 {
     color: crimson;
-}
-.navbar-brand
-{
-    font-family: serif;
 }
 .menu1::after
 {
@@ -176,7 +174,7 @@ body
 }
 .line_ht p
 {
-    line-height: 27px;
+    line-height: 28px;
     text-align:justify;
 }
 .ht_about
