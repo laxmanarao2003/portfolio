@@ -101,11 +101,11 @@ body
     height: 2px;
     transition: 0.5s;
     margin-top: 25px;
-    margin-left: -43px;
+    margin-left: -40px;
 }
 .menu1:hover::after
 {
-    width:45px;
+    width:43px;
     transition-timing-function:linear;
 }
 .menu2::after
@@ -117,7 +117,7 @@ body
     height: 2px;
     transition: 0.5s;
     margin-top: 25px;
-    margin-left: -44px;
+    margin-left: -42px;
 }
 .menu2:hover::after
 {
@@ -133,11 +133,11 @@ body
     height: 2px;
     transition: 0.5s;
     margin-top: 25px;
-    margin-left: -95px;
+    margin-left: -90px;
 }
 .menu3:hover::after
 {
-    width:99px;
+    width:94px;
     transition-timing-function:linear;
 }
 .menu4::after
@@ -163,9 +163,9 @@ body
     background-color: crimson;
     width: 0px;
     height: 2px;
-    transition: 0.5s;
+    transition:0.5s;
     margin-top: 25px;
-    margin-left: -53px;
+    margin-left: -51px;
 }
 .menu5:hover::after
 {
@@ -196,4 +196,7 @@ body
 {
     line-height: 27px;
     text-align: justify;
+}
+.flex-wrap div span{
+    cursor: pointer;
 }
