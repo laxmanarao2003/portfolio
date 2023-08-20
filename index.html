@@ -11,13 +11,10 @@
         <meta http-equiv="refresh" content="">
 
         <!----------------------------- FAVICON --------------------------------->
-        <link rel="icon" href=".\images\portfolio_favicon_remove.png" type="image/x-icon">
+        <link rel="icon" href=".\Images\portfolio_favicon.png" type="image/x-icon">
 
         <!-------------------------External CSS ---------------------------------->
         <link rel="stylesheet" href="styled_portfolio.css" type="text/css">
-        
-        <!------------------------External JAVA SCRIPT -------------------------->
-        <script src="script_portfolio.js"></script>
 
         <!------------------------------- JQUERY-JS-CDN -------------------------->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -40,73 +37,28 @@
         <!------------------------ BOOTSTRAP-JQuery-CDN -------------------------->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     </head>
-    <script>
-        $(document).ready(function()
-            {
-                $("#tele").hover(function()
-                {
-                    $("#tele").tooltip();
-                });
-                $("#insta").hover(function()
-                {
-                    $("#insta").tooltip();
-                });
-                $("#fb").hover(function()
-                {
-                    $("#fb").tooltip();
-                });
-                $("#github").hover(function()
-                {
-                    $("#github").tooltip();
-                });
-                $("#twitter").hover(function()
-                {
-                    $("#twitter").tooltip();
-                });
-                $("#up-arrow a").hover(function()
-                {
-                    $(this).tooltip();
-                });
-            }); 
-    </script>
+
+    <!--------------- importing SMTP -------------------->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function msgsend()
-        {
-            let inp1=document.form1.fname.value;
-            let inp2=document.form1.mail.value;
-            let inp3=document.form1.comments.value;
-            Email.send({
-                    Host : 'smtp.elasticemail.com',
-                    Username : 'laxmanarao.arasavilli3@gmail.com',
-                    Password : 'D803F816B63C1E315B8DC138DF52103A8EFF',
-                    To :'laxmanarao.arasavilli3@gmail.com',
-                    From :'laxmanarao.arasavilli3@gmail.com',
-                    Subject : "Form Enquiry",
-                    Body : "Name: "+inp1+"<br>" 
-                            +"Email: "+inp2+"<br>"
-                            +"comments: "+inp3
-                }).then(message => alert("Message sent successfully")).catch((error)=>{alert("Message sending Error")});
-        }
-    </script>
-<body onload="typed_func()" oncontextmenu="return false">
-        <nav class="navbar navbar-expand-sm bg-dark sticky-top" id="navmenu">
-            <div class="container-fluid">
-                    <a href="" class="navbar-brand ps-1"><span id="nav-brand">port</span>folio</a>
-                    <button data-bs-target="#mynav" class="navbar-toggler" data-bs-toggle="collapse">
-                        <i class="fa-solid fa-bars text-light"></i>
-                    </button>
-                <div class="container collapse navbar-collapse justify-content-end" id="mynav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item me-4"><a class="nav-link menu1" href="#home">Home</a></li>
-                        <li class="nav-item me-4"><a class="nav-link menu2" href="#about">About</a></li>
-                        <li class="nav-item me-4"><a class="nav-link menu3" href="#myeducation">My Education</a></li>
-                        <li class="nav-item me-4"><a class="nav-link menu4" href="#skills">Skills</a></li>
-                        <li class="nav-item me-3"><a class="nav-link menu5" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+
+<body onload="typescript()" oncontextmenu="return false">
+    <nav class="navbar navbar-expand-sm bg-dark sticky-top" id="navmenu">
+        <div class="container-fluid">
+                <a href="" class="navbar-brand ps-3"><span id="nav-brand">port</span>folio</a>
+                <button data-bs-target="#mynav" class="navbar-toggler" data-bs-toggle="collapse">
+                    <i class="fa-solid fa-bars text-light"></i>
+                </button>
+            <div class="container collapse navbar-collapse justify-content-end" id="mynav">
+                <ul class="navbar-nav">
+                    <li class="nav-item me-4"><a class="nav-link menu1" href="#home">Home</a></li>
+                    <li class="nav-item me-4"><a class="nav-link menu2" href="#about">About</a></li>
+                    <li class="nav-item me-4"><a class="nav-link menu3" href="#myeducation">My Education</a></li>
+                    <li class="nav-item me-4"><a class="nav-link menu4" href="#skills">Skills</a></li>
+                    <li class="nav-item me-3"><a class="nav-link menu5" href="#contact">Contact</a></li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
     <!----------------------------------- HOME --------------------------------->
     <div class="container-fluid d-flex pt-5" id="home"><!---------background-image------------->
         <div class="ms-3 text-light pt-5 ps-2" id="ltr-spacing">
@@ -116,7 +68,7 @@
                  <p class="pb-1 h4">And I'm a <span class="h4" id="dynamic-txts1"></span></p>
             </div>
             <div class="row h6 pt-2 line_ht">
-                <p>I am a Web Designer, My expertise is to create and Website Design</p>
+                <p>I am a Web Designer, My expertise is to create Website</p>
             </div>
             <div class="mt-4">
                 <a class="btn btn-outline-warning mw-auto mt-2" href="#about">About Me<i class="fa-solid fa-user-tie ps-2"></i></a>
@@ -132,37 +84,34 @@
             <div class="mw-auto col-2" style="color: rgba(210, 14, 167, 0.886);"> Who I am </div>
             <div class="mw-auto col-2"><hr></div>
         </div>
-        <div class="container-fluid row d-flex flex-col">
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-3 d-flex flex-center h-50 pb-4">
-                <div class="card" style="width:320px;">
-                    <img class="card-img-top img-thumbnail" src="image.jpg" alt="profile" style="width:100%;">
-                    <div class="card-body">
-                        <h5 class="card-title ps-1">Arasavilli Laxmana Rao</h5>
-                    </div>
+        <div class="container-fluid row d-flex flex-col pb-5">
+            <div class="col-lg-3 col-md-5 col-sm-6 mt-3 myprofile">
+                <div>
+                    <img class="card-img-top  rounded-circle img-thumbnail" src=".\Images\image.jpg" alt="profile">
                 </div>
             </div>
-            <div class="col-lg-8 col-md-6 col-sm-12 mt-4 pt-3 pb-5 text-justify">
+            <div class="col-lg-9 col-md-12 col-sm-12 mt-4 ps-3 pt-3 pb-5 text-justify bio-info">
                 <h5 style="line-height: 28px;">I'm Laxmana Rao and I'm a<span class="h5 ps-2" id="dynamic-txts2"></span></h5>
                 <div>
                     <div class="ht_about">
-                         I design beautiful and engaging user experiences for the web. 
+                        I design beautiful and engaging user experiences for the web. 
                         I have done my schooling at Nellimarla.It was a very enriching experience at the school as not only we were actively involved in practical projects,
                         but also got opportunities to participate in a number of sports and other extra-curricular activities. I have done my Intermediate at Sathivada. 
-                        I choose computer science and information technology at Lendi institution of engineering and technology.
-                        <p style="text-indent:10px;"> 
+                        I chose computer science and information technology at Lendi institution of engineering and technology.
+                        <p style="text-indent:40px;"> 
                             And I design beautiful, engaging user experiences for the web. I pride myself on reliable communication with my clients.
                             I am looking for a Front-End Web Developer who is motivated to combine the art of design with the art of programming. 
                             I will work with the UI designer and bridge the gap between graphical design and technical implementation, 
                             taking an active role on both sides and defining how the application looks as well as how it works.
                         </p>
                     </div>
-                    <a href=".\Resume.jpg" download="Arasavilli_LaxmanaRao_resume" target="self" class="btn btn-primary mt-2"><i class="fa-solid fa-download pe-2"></i>Download CV</a>
+                    <a href=".\Images\Arasavilli LaxmanaRao CV.pdf" download="Arasavilli_LaxmanaRao_resume" target="self" class="btn btn-primary mt-2"><i class="fa-solid fa-download pe-2"></i>Download CV</a>
                 </div>
             </div>
         </div>
 
         <!------------------------ HOME Navigator ---------------------------------->
-        <div class="container" id="up-arrow">
+        <div class="container" id="up-arrow" style="display: none;">
             <a href="#home" class="btn btn-outline-danger float-end" title="Back to top" data-bs-placement="left"><i class="fa-solid fa-circle-arrow-up"></i></a>
         </div>
         <!------------------------ HOME Navigator ---------------------------------->
@@ -188,42 +137,49 @@
                 <button type="button" class="" data-bs-target="#sliding" data-bs-slide-to="3"></button>
                 <button type="button" class="" data-bs-target="#sliding" data-bs-slide-to="4"></button>
                 <button type="button" class="" data-bs-target="#sliding" data-bs-slide-to="5"></button>
+                <button type="button" class="" data-bs-target="#sliding" data-bs-slide-to="6"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active mx-auto">
-                    <img src="https://verloop.io/wp-content/uploads/Whatsapp-Message-Templates-How-to-Create-and-Best-Practices-01-scaled.jpg" style="width:770px;max-height:450px;">
+                    <img src=".\Images\whatsapp_logo.jpg" class="w-100 d-block h-100">
                     <div class="carousel-caption">
-                        <h5 class="text-danger h4 text-center">Whatsapp Clone</h5>
+                        <h5 class="text-success h4 text-center">Whatsapp Clone</h5>
                     </div>
                 </div>
                 <div class="carousel-item mx-auto">
-                    <img src="https://www.figma.com/community/plugin/1111047009229518902/thumbnail" style="width:920px;max-height:450px;">
+                    <img  src=".\Images\Youtube_logo.jpg" class="w-100 d-block h-100">
                     <div class="carousel-caption">
-                        <h5 class="text-danger h4 text-center">Qr code Generator</h5>
+                        <h5 class="text-light h4 text-center">Youtube Clone</h5>
                     </div>
                 </div>
                 <div class="carousel-item mx-auto">
-                    <img src="https://clutchpoints.com/_next/image?url=https%3A%2F%2Fwp.clutchpoints.com%2Fwp-content%2Fuploads%2F2023%2F03%2FDhoni-Virat-Rohit-CP-23-March-2023.jpg&w=1920&q=75" style="width:770px;max-height:450px;">
+                    <img src=".\Images\rohit_logo.webp" class="w-100 d-block h-100">
                     <div class="carousel-caption">
-                        <h5 class="text-danger h4 text-center">Tribute Page</h5>
+                        <h5 class="text-dark h4 text-center">Tribute Page</h5>
                     </div>
                 </div>
                 <div class="carousel-item mx-auto">
-                    <img src="https://img.freepik.com/premium-vector/neon-quiz-game-template-four-options-answers-knowledge-exam-school-tv-show_501173-635.jpg" style="width:770px;max-height:450px;">
+                    <img src=".\Images\Textbook.jpg" class="w-100 d-block h-100">
                     <div class="carousel-caption">
-                        <h5 class="text-danger h4 text-center">General Knowledge Quiz</h5>
+                        <h5 class="text-dark h4 text-center">Materials Provider</h5>
                     </div>
                 </div>
                 <div class="carousel-item mx-auto">
-                    <img src="https://repository-images.githubusercontent.com/552129612/2c677469-fe80-4bf7-acba-7318225a1479" style="width:770px;max-height:450px;">
+                    <img src=".\Images\quiz_logo.webp" class="w-100 d-block h-100">
+                    <div class="carousel-caption">
+                        <h5 class="text-light h4 text-center">General Knowledge Quiz</h5>
+                    </div>
+                </div>
+                <div class="carousel-item mx-auto">
+                    <img src=".\Images\pwd_logo.jpeg" class="w-100 d-block h-100">
                     <div class="carousel-caption">
                         <h5 class="text-danger h4 text-center">Password Generator</h5>
                     </div>
                 </div>
                 <div class="carousel-item mx-auto">
-                    <img src="https://images.template.net/wp-content/uploads/2022/11/Textbook.jpg" style="width:770px;max-height:450px;">
+                    <img  src=".\Images\qr_logo.png" class="w-100 d-block h-100">
                     <div class="carousel-caption">
-                        <h5 class="text-danger h4 text-center">Materials Provider</h5>
+                        <h5 class="text-light h4 text-center">Qr code Generator</h5>
                     </div>
                 </div>
             </div>
@@ -234,22 +190,30 @@
                 <span class="carousel-control-next-icon"></span>
             </button>
         </div>
+        <div class="d-flex flex-wrap justify-content-center container mb-5">
+            <div><a href="https://laxmanarao2003.github.io/Youtube.com/" target="_blank"  class="btn btn-outline-info text-dark py-1 px-3 me-4 mb-3">Youtube Clone</a></div>
+            <div><a href="https://laxmanarao2003.github.io/webchat.com" target="_blank"  class="btn btn-outline-info text-dark py-1 px-3 me-4 mb-3">Whatsapp Clone</a></div>
+            <div><a href="https://laxmanarao2003.github.io/tribute.html/" target="_blank"  class="btn btn-outline-info text-dark py-1 px-3 me-4 mb-3">Tribute Page</a></div>
+            <div><a href="https://laxmanarao2003.github.io/seqr/" target="_blank"  class="btn btn-outline-info text-dark py-1 px-3 me-4 mb-3">Materials Providing</a></div>
+            <div><a href="https://laxmanarao2003.github.io/Quizz/" target="_blank"  class="btn btn-outline-info text-dark py-1 px-3 me-4 mb-3">Quiz</a></div>
+            <div><a href="https://laxmanarao2003.github.io/portfolio/" target="_self"  class="btn btn-outline-info text-dark py-1 px-3 me-4 mb-3">Portfolio</a></div>
+            <div><a href="https://laxmanarao2003.github.io/password-generator/" target="_blank"  class="btn btn-outline-info text-dark py-1 px-3 me-4 mb-3">Password Generator</a></div>
+            <div><a href="https://laxmanarao2003.github.io/qrconvertor/" target="_blank"  class="btn btn-outline-info text-dark py-1 px-3 mb-3">Qr code Generator</a></div>
+        </div>
         
         <div class="d-flex justify-content-center text-center">
             <div class="mw-auto col-2"><hr></div>
             <div class="mw-auto col-2 pt-2" style="color: rgba(210, 14, 167, 0.886);">What I Learn</div>
             <div class="mw-auto col-2"><hr></div>
         </div>
-        <div class="container mt-4 ht_education">
+        <div class="container-fluid px-5 mt-4 ht_education">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <i class="fa-solid fa-graduation-cap pe-4"></i>
                     <span class="badge rounded-pill bg-info">2017</span>
                     <h5 class="ps-5 pt-2">9Th Standard</h5>
                     <p class="ps-5 pt-1">
-                        There were many memorable moments in my 9th-grade experience. I made new friends through shared interests and classes. 
-                        I joined clubs and participated in school events, which helped me build camaraderie and develop a sense of pride for my school.The teachers were more demanding than those from middle school, 
-                        but they also provided excellent guidance and support to help us achieve our academic goals. One of the most valuable lessons I learned was time management. 
+                        There were many memorable moments in my 9th-grade experience.I joined clubs and participated in school events, which helped me build camaraderie and develop a sense of pride for my school.One of the most valuable lessons I learned was time management. 
                         Balancing school work, extracurricular activities, and social obligations was a challenge. But with planning and prioritization skills, I was able to create a schedule that allowed me to excel in different areas of my life. 
                         Overall, the 9th-grade experience taught me valuable life skills such as time management, planning, and resilience. It also introduced me to new friends, opportunities, and challenges that helped me grow both academically and socially.
                     </p>
@@ -260,7 +224,7 @@
                     <h5 class="ps-5 pt-2">10Th Standard</h5>
                     <p class="ps-5 pt-1">
                         As I was good in studies and always scored more than 90% earlier, my goal was to score good and apply for scholarship for higher studies.
-                        My school used to take extra classes in summer vacation before 10th STD regular classes starts. 
+                        My school used to take extra classes in summer vacation before 10th Standard regular classes starts. 
                         So that they could complete the portion and could take revision. I studied hard and didn't gave any importance what people think. Didn't attend any parties, 
                         didn't watch TV, even my parents didn't watch TV as I could get disturb.my parents blessings and study I scored 90%. Everyone were happy in our society and congratulating me and my parents. 
                         I could see proud feeling on my parents face and how happy they were.
@@ -271,11 +235,11 @@
                     <span class="badge rounded-pill bg-info">2019</span>
                     <h5 class="ps-5 pt-2">Intermediate</h5>
                     <p class="ps-5 pt-1">
-                        College life is known as one of the most memorable years of one’s life. It is entirely different from school life. 
+                        College life is known as one of the most memorable years of one's life. It is entirely different from school life. 
                         College life exposes us to new experiences and things that we were not familiar with earlier. For some people, college life means enjoying life to the fullest and partying hard.
                         While for others, it is time to get serious about their career and study thoroughly for a brighter future.
                         College life is a big transition from school life. We go through a lot of changes when we enter college. Our schools were a safe place where we had grown up and spent half our lives. 
-                        The transition to college is so sudden that you’re no longer protected by your teachers and friends of your school time.
+                        The transition to college is so sudden that you're no longer protected by your teachers and friends of your school time.
                     </p>
                 </div>
             </div>   
@@ -286,8 +250,7 @@
                     <h5 class="ps-5 pt-2">B.Tech</h5>
                     <p class="ps-5 pt-1">
                         I think its an excellent field and I am fully enjoying it. Although teachers at my university are good and there is so much things to memorize, my love for the subject has only increased
-                        Every working day I attend classes at my university from 9 am. Although I am very enthusiastic with the subject, poor peers and unenthusiastic, 
-                        forever in a hurry teacher bring me down till the end of the day. But I have found my way out of the misery. I watch great videos online from coursera and udacity, enjoy innovating in my lab.
+                        Every working day I attend classes at my university from 9 am. Although I am very enthusiastic with the subject. But I have found my way out of the misery. I watch great videos online from coursera and udacity, enjoy innovating in my lab.
                         An engineering degree is one of the most pursued academic paths at a university level around the globe. There are many steps and procedures to become a good student,
                         planning, monitoring, and evaluating are the best way to become a good student.
                     </p>
@@ -302,7 +265,7 @@
                         Also, I know that this is something I can attain if I just set my mind and focus at the goal, by working hard efficiently.
                         HTML is a markup language, the structure of web pages.
                         CSS is the language for describing the presentation of the web, dealing with colors, layout, spacing and more.
-                        JavaScript is the language of the web. It’s a client-side language and enhances the interaction for the user on a web page.
+                        JavaScript is the language of the web. It's a client-side language and enhances the interaction for the user on a web page.
                         Invest a lot of time into mastering these three languages.
                     </p>
                 </div>
@@ -321,60 +284,57 @@
             <div class="mw-auto col-2"><hr></div>
         </div>
         <div class="container-fluid row mt-3 pt-4 pb-3">
-            <div class="col-sm-12 col-md-7 col-lg-7 pt-2 ht_skills">
+            <div class="col-sm-12 col-md-12 col-lg-6 pt-4 ht_skills">
                 <h5>My creative Skills and Experiences.</h5>
                 <p>
                     I design beautiful and engaging user experiences for the web.
                     I am confident I can reach my goal. There are lots of opportunities for me to become successful in this field(Front-End development).
                     Also, I know that this is something I can attain if I just set my mind and focus at the goal, by working hard efficiently.
                     HTML is a markup language, the structure of web pages.CSS is the language for describing the presentation of the web, dealing with colors, layout, spacing and more.
-                    JavaScript is the language of the web. It’s a client-side language and enhances the interaction for the user on a web page.I Invested a lot of time into getting most proficiency in these three languages.
+                    JavaScript is the language of the web. It's a client-side language and enhances the interaction for the user on a web page.I Invested a lot of time into getting most proficiency in these three languages.
                 </p>
             </div>
-            <div class="col-sm-12 col-md-5 col-lg-5 mt-2">
-                <div class="mb-3 ms-4">
-                    <div class="row">
-                        <h6 class="text-start col"><i class="fa-brands fa-html5 pe-2"></i>HTML</h6>
-                        <h6 class="text-end col">90%</h6>
+            <div class="col-sm-12 col-md-12 col-lg-6 skills-imgs">
+                <div class="d-flex flex-wrap justify-content-around align-items-center flex-wrap border border-1 border-dark rounded rounded-3 pt-5 ">
+                    <div class="mb-5">
+                        <div class="">
+                            <img src=".\Images\HTML5_logo.png" style="height: 120px;width: 120px;" class="card-img-top" alt="...">
+                        </div>
                     </div>
-                    <div class="row progress" style="height: 8px;">
-                        <div class="progress bg-info" style="width:90%;height: 8px;"></div>
+                    <div class="mb-5 ">
+                        <div class="">
+                            <img src=".\Images\CSS-Logo.jpg" style="height: 120px;width: 120px;" class="card-img-top" alt="...">
+                        </div>
                     </div>
-                </div>
-                <div class="mb-3 ms-4">
-                    <div class="row">
-                        <h6 class="text-start col"><i class="fa-brands fa-css3-alt pe-2"></i>CSS</h6>
-                        <h6 class="text-end col">85%</h6>
+                    <div class="mb-5 ">
+                        <div class="">
+                            <img src=".\Images\JavaScript-Logo.png" style="height: 120px;width: 120px;" class="card-img-top" alt="...">
+                        </div>
                     </div>
-                    <div class="row progress h-25" style="height: 8px;">
-                        <div class="progress bg-info" style="width:85%;height: 8px;"></div>
+                    <div class="mb-5 ">
+                        <div class="">
+                            <img src=".\Images\jquery.png" style="height: 120px;width: 120px;" class="card-img-top" alt="...">
+                        </div>
                     </div>
-                </div>
-                <div class="mb-3 ms-4">
-                    <div class="row">
-                        <h6 class="text-start col"><i class="fa-brands fa-js pe-2"></i>Javascript</h6>
-                        <h6 class="text-end col">80%</h6>
+                    <div class="mb-5 ">
+                        <div class="">
+                            <img src=".\Images\icon-bootstrap.webp" style="height: 120px;width: 120px;" class="card-img-top" alt="...">
+                        </div>
                     </div>
-                    <div class="row progress h-25" style="height: 8px;">
-                        <div class="progress bg-info" style="width:80%;height: 8px;"></div>
+                    <div class="mb-5 ">
+                        <div class="">
+                            <img src=".\Images\reactjs.png" style="height: 120px;width: 120px;" class="card-img-top" alt="...">
+                        </div>
                     </div>
-                </div>
-                <div class="mb-3 ms-4">
-                    <div class="row">
-                        <h6 class="text-start col"><i class="fa-solid fa-j pe-2"></i>JQUERY</h6>
-                        <h6 class="text-end col">85%</h6>
+                    <div class="mb-5 ">
+                        <div class="">
+                            <img src=".\Images\Java-Logo.png" style="height: 120px;width: 120px;" class="card-img-top" alt="...">
+                        </div>
                     </div>
-                    <div class="row progress" style="height: 8px;">
-                        <div class="progress bg-info" style="width:85%;height: 8px;"></div>
-                    </div>
-                </div>
-                <div class="mb-2 ms-4">
-                    <div class="row">
-                        <h6 class="text-start col"><i class="fab fa-bootstrap pe-2"></i>Bootstrap5</h6>
-                        <h6 class="text-end col">90%</h6>
-                    </div>
-                    <div class="row progress" style="height: 8px;">
-                        <div class="progress bg-info" style="width:90%;height: 8px;"></div>
+                    <div class="mb-5 ">
+                        <div class="">
+                            <img src=".\Images\dsa.png" style="height: 110px;width: 110px;" class="card-img-top" alt="...">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -411,7 +371,7 @@
             </div>
             <div class="col-lg-5 col-md-12 col-sm-12 mt-2">
                 <h5 class="pt-4 pb-3">Message Me</h5>
-                <form onsubmit="msgsend();reset(); return false" method="post" class="was-validated" name="form1">
+                <form onsubmit="msgsend();reset(); return false" method="post" class="was-validated" name="form1" id="myform" autocomplete="off">
                     <div class="form-floating mb-3">
                         <input type="text" id="Name" name="fname" class="form-control" placeholder="Enter Your Name" required>
                         <label for="Name" class="form-label">Enter Your Name</label>
@@ -447,9 +407,11 @@
                 <a href="https://twitter.com/laxmanarao2003"class="btn btn-outline-light btn-floating"target="_blank" title="Twitter" id="twitter" data-bs-placement="right"><i class="fa-brands fa-twitter-square"></i></a>
             </div>
             <div class="bg-dark text-center pt-3 pb-2"> 
-                <a href=".\portfolio.html" id="copyright" class="text-center text-light text-decoration-none"> &copy; 2023 Copyright: Laxmana Rao@SeQr</a>
+                <a href="#" id="copyright" class="text-center text-light text-decoration-none"> &copy; 2023 Copyright: Laxmana Rao@SeQr</a>
             </div>
         </div>
     </footer>
+    <!------------------------External JAVA SCRIPT -------------------------->
+    <script src="script_portfolio.js"></script>
 </body>
 </html>
