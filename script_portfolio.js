@@ -1,9 +1,11 @@
 /* send a message through smtp protocol */
 const msgsend=()=>{
+
     let inp1=document.form1.fname.value;
     let inp2=document.form1.mail.value;
     let inp3=document.form1.comments.value;
     let date=new Date();
+
     Email.send({
         Host : 'smtp.elasticemail.com',
         Username : 'laxmanarao.arasavilli1308@gmail.com',
@@ -13,7 +15,10 @@ const msgsend=()=>{
         Subject : "Form Enquiry",
         Body : "Name: "+inp1+"<br>" +"Email: "+inp2+"<br>"+"comments: "+inp3+"<br>"+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds()
                 
-    }).then(message => alert("Message captured successfully")).catch((error)=>{alert("Message sending Error")});
+    })
+    .then(message => alert("Message captured successfully"))
+    .catch((error)=>alert("Message sending Error"));
+
 }
 
 /* Adding animation effect to Name */
@@ -46,9 +51,9 @@ window.addEventListener("scroll",()=>{
 /* Hover effects using Jquery */
 $(document).ready(function()
 {
-    $("#tele").hover(function()
+    $("#linkedin").hover(function()
     {
-        $("#tele").tooltip();
+        $("#linkedin").tooltip();
     });
     $("#insta").hover(function()
     {
