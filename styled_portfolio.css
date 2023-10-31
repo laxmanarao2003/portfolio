@@ -1,34 +1,16 @@
-*
-{
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
 /***************
 body
 {
     user-select:none;
 }
 ***************/
-::-webkit-scrollbar
-{
-    width:9px;
-    height: 10px;
-}
-::-webkit-scrollbar-thumb
-{
-    background-color: rgba(240, 255, 255, 0.306);
-    border-radius: 5px;
-}
-::-webkit-scrollbar-thumb:hover
-{
-    background-color:#198754;
-}
-::-webkit-scrollbar-track
-{
-    width: 5px;
-    background-color: rgb(40,40,40);
-}
+
 #home
 {
     background-image: url('https://cdn.cbeditz.com/cbeditz/large/116144210481jxj3qip3lbnq6azoksnchx8d3yfehabm3nk19fpx4ll4nxp52g5ukyyko6lrdgtyvk5z7hwxwg5lsx3cwu1ft3wxaogk8pv4vpx.jpg');
@@ -99,7 +81,7 @@ body
     background-color: crimson;
     width: 0px;
     height: 2px;
-    transition: 0.5s;
+    transition: 0.5s;   
     margin-top: 25px;
     margin-left: -40px;
 }
@@ -179,7 +161,7 @@ body
 }
 .ht_about
 {
-    line-height: 27px;
+    line-height: 28px;
     text-align:justify;
 }
 .ht_skills
