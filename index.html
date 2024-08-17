@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>
+            Portfolio
+        </title>
+        <meta name="author" content="Laxmana Rao">
+        <meta name="description" content="Portfolio">
+        <meta name="keywords" content="MySelf">
+        <meta name="viewport" content="initial-scale=1.0,width=device-width">
+        <meta http-equiv="refresh" content="">
+
+        <!----------------------------- FAVICON --------------------------------->
+        <link rel="icon" href=".\Images\portfolio_favicon.png" type="image/x-icon">
+
+        <!-------------------------External CSS ---------------------------------->
+        <link rel="stylesheet" href="styled_portfolio.css" type="text/css">
+
+        <!------------------------------- JQUERY-JS-CDN -------------------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!----------------------------- Fontawesome-JS-CDN -------------------------->
+        <script src="https://kit.fontawesome.com/832f4883ab.js" crossorigin="anonymous"></script>
+
+        <!----------------------------- Typed-JS-CDN ----------------------------->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+        <!---------------------------- Scroll Reveal-JS-CDN ------------------------->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--------------------------- BOOTSTRAP-Css-CDN --------------------------->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- --------------------- BOOTSTRAP-JavaScript-CDN ---------------------------->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!------------------------ BOOTSTRAP-JQuery-CDN -------------------------->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    </head>
+
+    <!--------------- importing SMTP -------------------->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<body onload="typescript()" oncontextmenu="return false">
+    <nav class="navbar navbar-expand-md bg-dark sticky-top" id="navmenu">
+        <div class="container-fluid">
+                <a href="" class="navbar-brand ps-3"><span id="nav-brand">port</span>folio</a>
+                <button data-bs-target="#mynav" class="navbar-toggler" data-bs-toggle="collapse">
+                    <i class="fa-solid fa-bars text-light"></i>
+                </button>
+            <div class="container collapse navbar-collapse justify-content-end" id="mynav">
+                <ul class="navbar-nav">
+                    <li class="nav-item me-4"><a class="nav-link menu1" href="#home"><i class="me-2 fa-solid fa-house"></i>Home</a></li>
+                    <li class="nav-item me-4"><a class="nav-link menu2" href="#about"><i class="me-2 fa-solid fa-address-card"></i>About</a></li>
+                    <li class="nav-item me-4"><a class="nav-link menu3" href="#myeducation"><i class="me-2 fa-solid fa-book"></i>My Education</a></li>
+                    <li class="nav-item me-4"><a class="nav-link menu4" href="#skills"><i class="me-2 fa-solid fa-award"></i>Skills</a></li>
+                    <li class="nav-item me-3"><a class="nav-link menu5" href="#contact"><i class="me-2 fa-solid fa-comment"></i>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!----------------------------------- HOME --------------------------------->
+    <div class="container-fluid d-flex pt-5" id="home"><!---------background-image------------->
+        <div class="ms-3 text-light pt-5 ps-2" id="ltr-spacing">
+            <div class="row pt-5 mt-3"><h5>Hello, my name is</h5></div>
+            <div class="row name"><h6 id="name">Laxmana Rao</h6></div>
+            <div class="row">
+                 <p class="pb-1 h4">And I'm a <span class="h4" id="dynamic-txts1"></span></p>
+            </div>
+            <div class="row h6 pt-2 line_ht">
+                <p>I am a Web Designer, My expertise is to create Website</p>
+            </div>
+            <div class="mt-4">
+                <a class="btn btn-outline-warning mw-auto mt-2" href="#about">About Me<i class="fa-solid fa-user-tie ps-2"></i></a>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------- HOME --------------------------------->
+
+
+    <!----------------------------------- ABOUT -------------------------------->
+    <div class="container-fluid bg-light mt-1 pt-3" id="about">
+            <h5 class="text-center pt-5">About me</h5>
+        <div class="d-flex flex-row row text-center justify-content-center">
+            <div class="mw-auto col-2"><hr></div>
+            <div class="mw-auto col-2" style="color: rgba(210, 14, 167, 0.886);"> Who I am </div>
+            <div class="mw-auto col-2"><hr></div>
+        </div>
+        <div class="container-fluid row d-flex justify-content-center flex-col py-4 ">
+            <div class="col-lg-3 col-md-4 col-sm-5 col-11 myprofile">
+                <div>
+                    <img class="card-img-top border border-primary img-fluid mb-3" style="height:380px;" src=".\Images\pic.jpg" alt="profile">
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-12 ps-3 text-justify bio-info">
+                <h5 style="line-height: 28px;">I'm Laxmana Rao and I'm a<span class="h5 ps-2" id="dynamic-txts2"></span></h5>
+                <div>
+                    <div class="ht_about">
+                        I have done my schooling at Nellimarla. It was a very enriching experience at the school as not only we were actively involved in practical projects,
+                        but also got opportunities to participate in a number of sports and other extra-curricular activities. I have done my Intermediate at Sathivada. 
+                        I am currently in the Fourth year and I chose Computer Science and Information Technology at Lendi Institute of Engineering and Technology.
+                        <p style="text-indent:40px;"> 
+                            And I design beautiful, engaging user experiences for the web. 
+                            I am looking for a Front-End Web Developer who is motivated to combine the art of design with the art of programming. 
+                            I am a highly motivated and detail-oriented Front-end Developer with a passion for creating user-friendly web interfaces,
+                            With a strong foundation in HTML, CSS, and JavaScript and some other Front-end Libraries. I pride myself on reliable communication with my clients.
+                            I am always eager to learn and adapt to new situations. I have a logical mind with a practical problem-solving approach. 
+                        </p>
+                    </div>
+                    <a href=".\Resume.pdf" download="Arasavilli_LaxmanaRao_resume" target="self" class="btn btn-primary mt-2"><i class="fa-solid fa-download pe-2"></i>Download CV</a>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------ HOME Navigator ---------------------------------->
+        <div class="container" id="up-arrow" style="display: none;">
+            <a href="#home" class="btn btn-outline-danger float-end" title="Back to top" data-bs-placement="left"><i class="fa-solid fa-angles-up"></i></a>
+        </div>
+        <!------------------------ HOME Navigator ---------------------------------->
+
+    </div>
+    <!---------------------------- ABOUT --------------------------------->
+
+
+    <!------------------------- My Education ---------------------------->
+    <div class="continer-fluid bg-light mt-1 py-5 " id="myeducation">
+        <div class="text-center pt-3">
+            <h5>My Education</h5>
+        </div>
+
+        <div class="d-flex justify-content-center text-center pb-3">
+            <div class="mw-auto col-2"><hr></div>
+            <div class="mw-auto col-2 pt-2" style="color: rgba(210, 14, 167, 0.886);">What I Learn</div>
+            <div class="mw-auto col-2"><hr></div>
+        </div>
+        <div class="container-fluid px-5 mt-4 ht_education">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="d-flex flex-row align-items-center">
+                        <i class="fa-solid fa-graduation-cap pe-4"></i>
+                        <div>
+                            <span class="badge rounded-pill bg-info">2018</span>
+                            <h5 class="pt-2">10Th Standard</h5>
+                        </div>
+                    </div>
+                    <p class="ps-5 pt-1">
+                        As I was good in studies and always scored more than 90% earlier, my goal was to score good and apply for scholarship for higher studies.
+                        My school used to take extra classes in summer vacation before 10th Standard regular classes starts. 
+                        So that they could complete the portion and could take revision. I studied hard and didn't gave any importance what people think. Didn't attend any parties, 
+                        didn't watch TV, even my parents didn't watch TV as I could get disturb.my parents blessings and study I scored 90%. Everyone were happy in our society and congratulating me and my parents. 
+                        I could see proud feeling on my parents face and how happy they were.
+                    </p>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="d-flex flex-row align-items-center">
+                        <i class="fa-solid fa-graduation-cap pe-4"></i>
+                        <div>
+                            <span class="badge rounded-pill bg-info">2019</span>
+                            <h5 class="pt-2">Intermediate</h5>
+                        </div>
+                    </div>
+                    
+                    <p class="ps-5 pt-1">
+                        College life is known as one of the most memorable years of one's life. It is entirely different from school life. 
+                        College life exposes us to new experiences and things that we were not familiar with earlier. For some people, college life means enjoying life to the fullest and partying hard.
+                        While for others, it is time to get serious about their career and study thoroughly for a brighter future.
+                        College life is a big transition from school life. We go through a lot of changes when we enter college. Our schools were a safe place where we had grown up and spent half our lives. 
+                        The transition to college is so sudden that you're no longer protected by your teachers and friends of your school time.
+                    </p>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="d-flex flex-row align-items-center">
+                        <i class="fa-solid fa-graduation-cap pe-4"></i>
+                        <div>
+                            <span class="badge rounded-pill bg-info">2020</span>
+                            <h5 class="pt-2">B.Tech</h5>
+                        </div>
+                    </div>
+                    <p class="ps-5 pt-1">
+                        I think its an excellent field and I am fully enjoying it. Although teachers at my university are good and there is so much things to memorize, my love for the subject has only increased
+                        Every working day I attend classes at my university from 9 am. Although I am very enthusiastic with the subject.
+                        I design beautiful and engaging user experiences for the web. I am confident I can reach my goal. There are lots of opportunities for me to become successful in this field(Front-End development).
+                        Also, I know that this is something I can attain if I just set my mind and focus at the goal, by working hard efficiently.
+                    </p>
+                </div>
+            </div>   
+        </div>
+        
+        <div class="d-flex justify-content-center text-center py-4">
+            <div class="mw-auto col-2"><hr></div>
+            <div class="mw-auto col-2 pt-2" style="color: rgba(210, 14, 167, 0.886);">What I Did</div>
+            <div class="mw-auto col-2"><hr></div>
+        </div>
+        <div class="carousel container mx-auto col-xxl-7 col-xl-7 col-lg-7 col-md-10 col-sm-10 mt-4 mb-5" data-bs-ride="carousel" id="sliding">
+
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#sliding" data-bs-slide-to="0"></button>
+                <button class="" data-bs-target="#sliding" data-bs-slide-to="1"></button>
+                <button class="" data-bs-target="#sliding" data-bs-slide-to="2"></button>
+                <button class="" data-bs-target="#sliding" data-bs-slide-to="3"></button>
+                <button class="" data-bs-target="#sliding" data-bs-slide-to="4"></button>
+                <button class="" data-bs-target="#sliding" data-bs-slide-to="5"></button>
+                <button class="" data-bs-target="#sliding" data-bs-slide-to="6"></button>
+                <button class="" data-bs-target="#sliding" data-bs-slide-to="7"></button>
+                <button class="" data-bs-target="#sliding" data-bs-slide-to="8"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active mx-auto">
+                    <img src=".\Images\whatsapp_logo.jpg" class="w-100 d-block h-100">
+                    <div class="carousel-caption">
+                        Whatsapp Clone
+                    </div>
+                </div>
+
+                <div class="carousel-item mx-auto">
+                    <img  src=".\Images\Youtube_logo.jpg" class="w-100 d-block h-100">
+                    <div class="carousel-caption">
+                        Youtube Clone
+                    </div>
+                </div>
+
+                <div class="carousel-item mx-auto">
+                    <img src="https://play-lh.googleusercontent.com/b_bcdTvQX9v6GuPV0DothHvYvlhQ_zVFXCT10Pfnw2_jyZYP6hnucAd7KUeZ_cwAgdS-=w3840-h2160-rw" class="w-100 d-block h-100">
+                    <div class="carousel-caption">
+                        Music Player
+                    </div>
+                </div>
+
+                <div class="carousel-item mx-auto">
+                    <img src=".\Images\quiz_logo.webp" class="w-100 d-block h-100">
+                    <div class="carousel-caption">
+                        Online Quiz
+                    </div>
+                </div>
+
+                <div class="carousel-item mx-auto">
+                    <img src="https://i.pinimg.com/1200x/9e/8b/05/9e8b05c6291a70239215945812f60b06.jpg" class="w-100 d-block h-100">
+                    <div class="carousel-caption">
+                        News Generator
+                    </div>
+                </div>
+
+                <div class="carousel-item mx-auto">
+                    <img src=".\Images\Textbook.jpg" class="w-100 d-block h-100">
+                    <div class="carousel-caption text-dark">
+                       Materials Provider (LMS)
+                    </div>
+                </div>
+
+                <div class="carousel-item mx-auto">
+                    <img src=".\Images\rohit_logo.webp" class="w-100 d-block h-100">
+                    <div class="carousel-caption text-dark">
+                       Tribute Page
+                    </div>
+                </div>
+
+                <div class="carousel-item mx-auto">
+                    <img src=".\Images\pwd_logo.jpeg" class="w-100 d-block h-100">
+                    <div class="carousel-caption">
+                       Password Generator
+                    </div>
+                </div>
+
+                <div class="carousel-item mx-auto">
+                    <img  src=".\Images\qr_logo.png" class="w-100 d-block h-100">
+                    <div class="carousel-caption text-dark">
+                        Qr code Generator
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#sliding">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#sliding">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center mt-5">
+            <div title="Developed a responsive, static YouTube clone website">
+                <a href="https://laxmanarao2003.github.io/Youtube.com/" target="_blank" class="btn btn-outline-info text-dark py-1 px-3 me-4 mb-3">
+                    Youtube Clone
+                </a>
+            </div>
+
+            <div title="Designed a responsive, static WhatsApp clone to demonstrate proficiency in front-end development">
+                <a href="https://laxmanarao2003.github.io/webchat.com" target="_blank" class="btn btn-outline-info text-dark py-1 px-3 me-4 mb-3">
+                    Whatsapp Clone
+                </a>
+            </div>
+
+            <div title="Designed a responsive, static Media Player web Application">
+                <a href="https://laxmanarao2003.github.io/mediaplayer/" target="_blank" class="btn btn-outline-info text-dark py-1 px-3 me-4 mb-3">
+                    Music Player
+                </a>
+            </div>
+
+            <div title="Developed a dynamic quiz application that utilizes external APIs to fetch and display questions">
+                <a href="https://laxmanarao2003.github.io/Quiz/" target="_blank" class="btn btn-outline-info text-dark py-1 px-3 me-4 mb-3">
+                    Online Quiz
+                </a>
+            </div>
+
+            <div title="Implemented Dynamic News Generator web Application with API Integration">
+                <a href="https://laxmanarao2003.github.io/smartNews/" target="_blank" class="btn btn-outline-info text-dark py-1 px-3 me-4 mb-3">
+                    News Generator
+                </a>
+            </div>
+
+            <div title="Designed a responsive, static Rohit sharma Tribute Page web Application">
+                <a href="https://laxmanarao2003.github.io/tribute.html/" target="_blank" class="btn btn-outline-info text-dark py-1 px-3 me-4 mb-3">
+                    Tribute Page
+                </a>
+            </div>
+
+            <div title="Designed a Responsive Website for providing subject materials to the students (LMS)">
+                <a href="https://laxmanarao2003.github.io/seqr/" target="_blank" class="btn btn-outline-info text-dark py-1 px-3 me-4 mb-3">
+                    Materials Providing (LMS)
+                </a>
+            </div>
+
+            <div title="Designed a responsive, static Portfolio web Application">
+                <a href="https://laxmanarao2003.github.io/portfolio/" target="_blank" class="btn btn-outline-info text-dark py-1 px-3 me-4 mb-3">
+                    Portfolio
+                </a>
+            </div>
+
+            <div title="Designed a responsive, Password Generator web Application">
+                <a href="https://laxmanarao2003.github.io/password-generator/" target="_blank" class="btn btn-outline-info text-dark py-1 px-3 me-4 mb-3">
+                    Password Generator
+                </a>
+            </div>
+
+            <div title="Implemented a responsive, Qr Code Generator web Application">
+                <a href="https://laxmanarao2003.github.io/qrconvertor/" target="_blank" class="btn btn-outline-info text-dark py-1 px-3 mb-3">
+                    Qr code Generator
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <!----------------------------------- My Education --------------------------------->
+
+
+    <!----------------------------------- SKILLS -------------------------------->
+    <div class="container-fluid mt-1 pb-5 pt-3 bg-light" id="skills">
+        <h4 class="text-center pt-5">My Skills</h4>
+        <div class="row d-flex flex-row justify-content-center text-center">
+            <div class="mw-auto col-2"><hr></div>
+            <div class="mw-auto col-2 pt-2" style="color: rgba(210, 14, 167, 0.886);">What I Know</div>
+            <div class="mw-auto col-2"><hr></div>
+        </div>
+        <div class="container-fluid row mt-3 pt-4 pb-3">
+            <div class="col-sm-12 col-md-12 col-lg-6 pt-4 ht_skills">
+                <h5>My creative Skills and Experiences.</h5>
+                <p>
+                    I design beautiful and engaging user experiences for the web.
+                    I am confident I can reach my goal. There are lots of opportunities for me to become successful in this field(Front-End development).
+                    Also, I know that this is something I can attain if I just set my mind and focus at the goal, by working hard efficiently.
+                    HTML is a markup language, the structure of web pages. CSS is the language for describing the presentation of the web, dealing with colors, layout, spacing and more.
+                    JavaScript is the language of the web. It's a client-side language and enhances the interaction for the user on a web page. I Invested a lot of time into getting most proficiency in these three languages.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 skills-imgs">
+                <div class="d-flex flex-wrap justify-content-around align-items-center flex-wrap border border-1 border-dark rounded rounded-3 pt-5 ">
+                    <div class="mb-5">
+                        <div class="">
+                            <img src=".\Images\HTML5_logo.png" style="height: 120px;width: 120px;" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="mb-5 ">
+                        <div class="">
+                            <img src=".\Images\CSS-Logo.jpg" style="height: 120px;width: 120px;" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="mb-5 ">
+                        <div class="">
+                            <img src=".\Images\JavaScript-Logo.png" style="height: 120px;width: 120px;" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="mb-5 ">
+                        <div class="">
+                            <img src=".\Images\jquery.png" style="height: 120px;width: 120px;" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="mb-5 ">
+                        <div class="">
+                            <img src=".\Images\icon-bootstrap.webp" style="height: 120px;width: 120px;" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="mb-5 ">
+                        <div class="">
+                            <img src=".\Images\reactjs.png" style="height: 120px;width: 120px;" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="mb-5 ">
+                        <div class="">
+                            <img src=".\Images\Java-Logo.png" style="height: 120px;width: 120px;" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="mb-5 ">
+                        <div class="">
+                            <img src=".\Images\dsa.png" style="height: 110px;width: 110px;" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------- SKILLS ------------------------------------->
+
+
+    <!----------------------------------- Contact Me --------------------------------->
+    <div class="container-fluid mt-1 bg-light pt-5 pb-5" id="contact">
+            <h4 class="text-center pt-4">Contact me</h4>
+        <div class="row d-flex flex-row justify-content-center text-center">
+            <div class="mw-auto col-2"><hr></div>
+            <div class="mw-auto col-2" style="color: rgba(210, 14, 167, 0.886);">Get in Touch</div>
+            <div class="mw-auto col-2"><hr></div>
+        </div>
+        <div class="container-fluid row mt-4">
+            <div class="col-lg-7 col-md-12 col-sm-12 mt-1">
+                <h5>Get in touch</h5>
+                <p class="ht_contact">
+                   If you have any queries, Just fill in the contact form and I will answer you shortly. If you are living nearby come and visit me.
+                </p>
+                <div class="d-flex flex-row mt-4">
+                    <i class="fa-solid fa-user-tie" style="font-size:190%"></i>
+                    <h6 class="ps-3">Arasavilli Laxmana Rao</h6>
+                </div>
+                <div class="d-flex flex-row mt-4">
+                    <i class="fa-solid fa-location-dot" style="font-size:190%"></i>
+                    <h6 class="ps-4">Nellimarla</h6>
+                </div>
+                <div class="d-flex flex-row mt-4">
+                    <i class="fa-solid fa-envelope" style="font-size:190%"></i>
+                    <h6 class="ps-3">laxmanarao.arasavilli3@gmail.com</h6>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-sm-12 mt-2">
+                <h5 class="pt-4 pb-3">Message Me</h5>
+                <form onsubmit="msgsend();reset(); return false" method="post" class="was-validated" name="form1" id="myform" autocomplete="off">
+                    <div class="form-floating mb-3">
+                        <input type="text" id="Name" name="fname" class="form-control" placeholder="Enter Your Name" required>
+                        <label for="Name" class="form-label">Enter Your Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" name="mail" id="mail" class="form-control" placeholder="Enter Your Valid Email" required>
+                        <label for="mail" class="form-label">Enter Your Email</label>
+                        <div class="valid-feedback">You entered Valid Email</div>
+                    </div>
+                    <div class="form-floating">
+                        <input type="textarea" id="Comments" name="comments" placeholder="Enter Your Comments" class="form-control" required cols="40" rows="6">
+                        <label for="comments" class="form-label">Enter Your Comments Here</label>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <button type="submit" class="btn btn-primary mt-4 mb-4 mw-auto">Send<i class="fa-solid fa-paper-plane ps-2"></i></button>
+                        <h6 class="mt-4 mb-4 ps-3 pt-2">or</h6>
+                        <a href="mailto:laxmanarao.arasavilli3@gmail.com" class="btn btn-primary mt-4 mb-4 ms-3 mw-auto" target="_blank">To Mail <i class="fa-solid fa-paper-plane ps-2"></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------------------- Contact Me --------------------------------->
+    <footer>
+        <div class="bg-dark text-center text-light mh-auto mb-auto pt-3 pb-3">
+            <h4 class="text-center pt-3">Contact me: <span class="text-primary">Laxmana Rao</span></h4>
+            <div class="pt-2 pb-2">
+                <a href="https://github.com/laxmanarao2003" class="btn btn-outline-light btn-floating me-2" target="_blank" title="Github" id="github" data-bs-placement="left"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/laxmana-rao-arasavilli-411914249/" class="btn btn-outline-light btn-floating me-2" target="_blank" title="Linkedin" id="linkedin" data-bs-placement="top"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/laxmanarao_arasavilli/" target="_blank" class="btn btn-outline-light btn-floating me-2" title="Instagram" id="insta" data-bs-placement="top"><i class="fa-brands fa-instagram-square"></i></a>
+                <a href="https://www.facebook.com/laxmanarao2003" target="_blank" class="btn btn-outline-light btn-floating me-2" title="Faceboook" id="fb" data-bs-placement="top"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/laxmanarao2003"class="btn btn-outline-light btn-floating"target="_blank" title="Twitter" id="twitter" data-bs-placement="right"><i class="fa-brands fa-twitter-square"></i></a>
+            </div>
+            <div class="bg-dark text-center pt-3 pb-2"> 
+                <a href="#" id="copyright" class="text-center text-light text-decoration-none"> &copy; 2023 Copyright: Laxmana Rao</a>
+            </div>
+        </div>
+    </footer>
+    <!------------------------External JAVA SCRIPT -------------------------->
+
+
+    <script src="script_portfolio.js"></script>
+</body>
+</html>

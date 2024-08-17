@@ -1,0 +1,184 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/***************
+body
+{
+    user-select:none;
+}
+***************/
+
+#home
+{
+    background-image: url('https://cdn.cbeditz.com/cbeditz/large/116144210481jxj3qip3lbnq6azoksnchx8d3yfehabm3nk19fpx4ll4nxp52g5ukyyko6lrdgtyvk5z7hwxwg5lsx3cwu1ft3wxaogk8pv4vpx.jpg');
+    min-height: 840px;
+}
+.navbar-brand
+{
+    color: azure;
+}
+.navbar-brand:hover
+{
+    color: rgb(54, 127, 127);
+}
+.navbar-nav li a:hover
+{
+    color:rgba(255,0,0,0.9);
+}
+#themes
+{
+    color:rgba(255,255,255,0.9);
+}
+#themes:hover
+{
+    color: rgba(255,0,0,0.9);
+}
+.navbar-nav li a
+{
+    color:rgba(255,255,255,0.9);
+}
+#name
+{
+    font-size:370%;
+    font-weight:500;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 1px red;
+}
+#ltr-spacing
+{
+    letter-spacing: 1px;
+}
+#up-arrow
+{
+    z-index: 1;
+    bottom: 16px;
+    right:3px;
+    position: fixed;
+}
+#dynamic-txts1,#dynamic-txts2
+{
+    color: crimson;
+}
+.mode li a
+{ 
+    color:rgba(255,255,255,0.9);
+}
+.mode li a:hover
+{ 
+    color: #000;
+}
+#nav-brand
+{
+    color: crimson;
+}
+.menu1::after
+{
+    content: " ";
+    position: absolute;
+    background-color: crimson;
+    width: 0px;
+    height: 2px;
+    transition: 0.5s;   
+    margin-top: 25px;
+    margin-left: -40px;
+}
+.menu1:hover::after
+{
+    width:43px;
+    transition-timing-function:linear;
+}
+.menu2::after
+{
+    content: " ";
+    position: absolute;
+    background-color: crimson;
+    width: 0px;
+    height: 2px;
+    transition: 0.5s;
+    margin-top: 25px;
+    margin-left: -42px;
+}
+.menu2:hover::after
+{
+    width:45px;
+    transition-timing-function:linear;
+}
+.menu3::after
+{
+    content: " ";
+    position: absolute;
+    background-color: crimson;
+    width: 0px;
+    height: 2px;
+    transition: 0.5s;
+    margin-top: 25px;
+    margin-left: -90px;
+}
+.menu3:hover::after
+{
+    width:94px;
+    transition-timing-function:linear;
+}
+.menu4::after
+{
+    content: " ";
+    position: absolute;
+    background-color: crimson;
+    width: 0px;
+    height: 2px;
+    transition: 0.5s;
+    margin-top: 25px;
+    margin-left: -34px;
+}
+.menu4:hover::after
+{
+    width:39px;
+    transition-timing-function:linear;
+}
+.menu5::after
+{
+    content: " ";
+    position: absolute;
+    background-color: crimson;
+    width: 0px;
+    height: 2px;
+    transition:0.5s;
+    margin-top: 25px;
+    margin-left: -51px;
+}
+.menu5:hover::after
+{
+    width:56px;
+    transition-timing-function:linear;
+}
+.line_ht p
+{
+    line-height: 28px;
+    text-align:justify;
+}
+.ht_about
+{
+    line-height: 28px;
+    text-align:justify;
+}
+.ht_skills
+{
+    line-height: 27px;
+    text-align: justify;
+}
+.ht_education
+{
+    line-height: 27px;
+    text-align: justify;
+}
+.ht_contact
+{
+    line-height: 27px;
+    text-align: justify;
+}
+.flex-wrap div span{
+    cursor: pointer;
+}
